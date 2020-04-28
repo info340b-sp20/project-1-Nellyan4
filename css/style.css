@@ -1,10 +1,19 @@
 * {
     box-sizing: border-box;
-  }
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+}
 
 body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #D8EEFB;
+}
+
+main {
+    grid-column: span 10;
 }
 
 section {
