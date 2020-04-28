@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
-}
+
+  }
 
 body {
     font-family: 'Courier New', Courier, monospace;
@@ -11,17 +12,37 @@ section {
     background-color: rgba(255, 0, 0, 0.1);
 }
 
-.logo {
-    size: 10em;
-}
-
 .sidebar {
-    width: 200px;
+    width: 400px;
+    height: 1200px;
     background-color: white;
-}
-
-.menu a {
-    display: block;
-    padding: 12px;
+    flex-direction: column;
+    font-size: 30px;
+    color: #808080;
     text-decoration: none;
 }
+
+.dropdowncontent a{
+    padding: 12px;
+    display: block;
+    float: none;
+    color: #808080;
+    text-decoration: none;
+}
+
+.facebooklogo {
+    width: 30px;
+    height: 30px;
+}
+
+.redditlogo {
+    width: 30px;
+    height: 30px;
+}
+
+.twitterlogo {
+    width: 30px;
+    height: 30px;
+}
+
+

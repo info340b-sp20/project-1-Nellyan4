@@ -7,6 +7,8 @@
     <meta name="description" content="The index page for the website SaveD - INFO 340 Spring">
     <title>SaveD</title>
 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="/img/iconfinder_General_Office_02_2530842.png">
 </head>
@@ -19,17 +21,18 @@
     </header>
 
     <nav class="sidebar">
-        <div class = "menu">
-        <li>saved quote</li>    
-            <a href="#Website">Website</a>
-            <a href="#Facebook">Facebook</a>
-            <a href="#Reddit">Reddit</a>
-            <a href="#Twitter">Twitter</a>
+        <div class="dropdown">
+            <p>saved quote</p>
+            <div class="dropdowncontent">
+                <a href="#Website">Website</a>
+                <a href="#Facebook"><img src="./img/facebook_icon.png" class="facebooklogo" alt="f with grey color">Facebook</a>
+                <a href="#Reddit"><img src="./img/reddit.png" class="redditlogo" alt="reddit with grey color">Reddit</a>
+                <a href="#Twitter"><img src="./img/twitterlogo.png" class="twitterlogo" alt="twitter with grey colorr">Twitter</a>
+            </div>
         </div>
 
-
-        <li>Recent saved</li>
-        <li>Settings</li>
+        <p>Recent saved</p>
+        <p>Settings</p>
 
         <div class="searchBox" role="search">
             <input type="text" placeholder="Search...">
