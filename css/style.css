@@ -1,7 +1,23 @@
 body {
     font-family: 'Courier New', Courier, monospace;
+    background-color: #D8EEFB;
 }
 
 section {
     background-color: rgba(255, 0, 0, 0.1);
+}
+
+.logo {
+    size: 10em;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: white;
+}
+
+.menu a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
 }
