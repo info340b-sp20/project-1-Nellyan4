@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.side {
+    display: flex;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 40%;
+    height: 100%;
+    background-color: #A4DBF2;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
