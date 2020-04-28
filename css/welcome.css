@@ -12,6 +12,10 @@ html, body{
     width: 100%;
 }
 
+footer {
+    display: none;
+}
+
 .welcomepage {
     display: flex;
     height: 100%;

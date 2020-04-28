@@ -2,33 +2,58 @@
     box-sizing: border-box;
 }
 
-.logo {
-    width: 200px;
-    height: 100px;
+html, body, div, p {
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    font-family: 'Courier New', Courier, monospace;
+html, body{
+    height: 100%;
+    width: 100%;
     background-color: #D8EEFB;
+    font-family: sans-serif;
 }
 
-main {
-    grid-column: span 10;
+footer {
+    display: none;
 }
 
-section {
-    background-color: rgba(255, 0, 0, 0.1);
+.mainpage {
+    display: flex;
+    height: 100%;
+    width: 100%;
 }
 
 .sidebar {
-    width: 400px;
-    height: 1200px;
+    display: flex;
     background-color: white;
-    flex-direction: column;
-    font-size: 30px;
-    color: #808080;
+    height: 100%;
+    width: 20%;
     text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
+
+.rightpage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.rightpage .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #8FDAFD;
+    height: 5%;
+    width: 100%;
+}
+
+.rightpage .sidebar {
+}
+
 
 .dropdowncontent a{
     padding: 12px;
