@@ -8,24 +8,26 @@
     <title>Welcome page</title>
 
     <link rel="stylesheet" href="css/welcome.css">
-    <link rel="icon" href="/img/iconfinder_General_Office_02_2530842.png">
+    <link rel="icon" href="./img/iconfinder_General_Office_02_2530842.png">
 </head>
 <body>
-    <main>
-    <div class="side">
-        <img class="welcomelogo" src="img/landing_logo.png" alt="logo">
-    </div>
+    <main class="welcomepage">
+        <div class="side">
+            <img src="img/landing_logo.png" alt="logo">
+        </div>
         <div class="info">
-            <div class="items">
                 <p class="sign-in">Sign in</p>
-                <label for="email_input">Email:</label>
-                <input name="email" type="email" id="email_input" placeholder="email@domain.com">
-                <label for="password_input">Password:</label>
-                <input name="password" type="password" id="password_input">
-                <form class="button" action="index.html">
-                    <input type="submit" value="Go to SaveD" />
+                <form action="./index.html" method="post">
+                    <div class="input_container_top">
+                        <label for="email_input"><img src="./img/Email.png"/></label>
+                        <input name="email" type="email" id="email_input" placeholder="email@domain.com">
+                    </div>
+                    <div class="input_container_bottom">
+                        <label for="password_input" ><img src="./img/Password.png"/></label>
+                        <input name="email" type="email" id="password_input" placeholder="Password">
+                    </div>
+                    <input  class="submit" type="submit" value="SIGN IN">
                 </form>
-            </div>
         </div>
     </main>
 </body>
