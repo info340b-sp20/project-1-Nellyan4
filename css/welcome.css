@@ -2,15 +2,7 @@
     box-sizing: border-box;
 }
 
-.welcome-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: stretch;
-}
-
 .side {
-    display: flex;
     position: fixed;
     left: 0px;
     top: 0px;
@@ -21,7 +13,24 @@
 }
 
 .info {
-    display: flex;
+    position: fixed;
+    left: 40%;
+    top: 0px;
+    height: 100%;
     flex-direction: column;
     text-align: center;
+}
+
+.logo {
+    position: center;
+    padding-top: 50%;
+}
+
+.items{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
