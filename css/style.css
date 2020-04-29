@@ -10,22 +10,190 @@ html, body, div, p {
 html, body{
     height: 100%;
     width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #A4DBF2;
+}
+
+main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+aside {
+    display: none;
+}
+
+.biglogo {
+    display: none;
+}
+
+#top-bar {
+    display: block;
     background-color: #D8EEFB;
-    font-family: sans-serif;
+    height: 80px;
+}
+
+#hamburger-menu a{
+    color: white;
+    font-size: 4rem;
+    margin-right: .5em;
+    margin-left: .2em;
+}
+
+.mainpagelogo {
+    width: 150px;
+    height: 70px;
+    position: absolute;
+    right: 0;
+}
+
+.bubble {
+    display: block;
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    position: relative;
+}
+
+.hellouser {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    
+}
+
+.hellouser p{
+    display: block;
+    font-size: 30px;
+    text-align: left;
+    color: #A4DBF2;
+    font-weight: bold;
+    display: flex;
 }
 
 footer {
     display: none;
 }
 
-.mainpage {
-    display: flex;
-    height: 100%;
-    width: 100%;
+@media (min-width: 598px) {
+    body {
+        background-color: #B2F5D5;
+    }
+
+    .hellouser p {
+        color: #5FDB9F;
+        font-size: 50px;
+    }
 }
 
+@media (min-width: 768px) {
+    body{
+        background-color: #9AB9F4;
+    }
+
+    #top-bar {
+        background-color: #A4DBF2;
+        height: 100px;
+    }
+    
+    .mainpagelogo {
+        display: none;
+    }
+
+    .biglogo{
+        width: 150px;
+        height: 70px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 1rem;
+        display: block;
+    }
+
+    #hamburger-menu a{
+        font-size: 5rem;
+    }
+
+    .hellouser p {
+        color: #9AB9F4;
+        font-size: 60px;
+        top: 30px;
+        left: 30px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    body {
+        background-color: #D8EEFB;
+    }
+
+    #top-bar {
+        background-color: #A4DBF2;
+        height: 100px;
+    }
+
+    .biglogo {
+        display: block;
+        width: 170px;
+        height: 80px;
+        position: absolute;
+        margin-right: .5em;
+        margin-left: 1em;
+        margin-top: .5em;
+    }
+
+    .mainpagelogo, #hamburger-menu a{
+        display: none;
+    }
+
+    .speechbubble {
+        display: block;
+        margin-left: 20rem;
+        margin-right: 10rem;
+        margin-top: 10rem;
+    }
+
+    .hellouser {
+        margin-left: 15rem;
+        margin-right: 10rem;
+        margin-top: 5rem;
+    }
+
+    .hellouser p{
+        font-size: 65px;
+        text-align: left;
+        color: #A4DBF2;
+    }
+
+    aside {
+        display: block;
+        background-color: white;
+    }
+
+    .sidebar {
+        padding-top: 2em;
+        padding-left: 1em;
+        padding-right: 15em;
+    }
+
+    .sidebar p{
+        font-size: 30px;
+        padding-bottom: 1em;
+        color: #808080;
+    }
+
+
+/* 
 .sidebar {
-    display: flex;
+    display: none;
     background-color: white;
     height: 100%;
     width: 20%;
@@ -36,7 +204,7 @@ footer {
 }
 
 .rightpage {
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 100%;
 }
@@ -72,4 +240,4 @@ footer {
 .twitterlogo {
     width: 30px;
     height: 30px;
-}
+} */
