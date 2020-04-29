@@ -84,6 +84,7 @@ aside {
     text-align: center;
     color: #A4DBF2;
     font-weight: bold;
+    font-size: 5vw;
 }
 
 /*footer contents*/
@@ -155,9 +156,7 @@ footer {
         margin-top: .5em;
     }
 
-    .mainpagelogo, #hamburger-menu a {
-        display: none;
-    }
+    
 
     .speechbubble {
         margin-left: 15rem;
@@ -217,7 +216,11 @@ footer {
         border-bottom: .6rem solid #A4DBF2;
         padding-bottom: .8rem;
     }
+    .mainpagelogo, #hamburger-menu a {
+        display: none;
+    }
 }
+
 
 
 /* 

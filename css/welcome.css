@@ -197,13 +197,14 @@ form img {
         position: absolute;
     }
 
+    form img {
+        width: 30px;
+    }
+
     .side img {
         width: 200px;
     }
 
-    form img {
-        width: 30px;
-    }
 
     .info .input_container_bottom input, .info .input_container_top input{
         font-size: 1rem;
