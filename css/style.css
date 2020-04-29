@@ -34,7 +34,7 @@ aside {
 #top-bar {
     display: block;
     background-color: #D8EEFB;
-    height: 80px;
+    height: 10%;
 }
 
 #hamburger-menu a{
@@ -61,21 +61,19 @@ aside {
 }
 
 .hellouser {
-    position: absolute;
-    top: 44%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
+    display: block;
+    position: relative;
+    margin-top: -33%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
     
 }
 
 .hellouser p{
-    display: block;
-    font-size: 30px;
-    text-align: left;
+    text-align: center;
     color: #A4DBF2;
     font-weight: bold;
-    display: flex;
 }
 
 footer {
@@ -89,7 +87,6 @@ footer {
 
     .hellouser p {
         color: #5FDB9F;
-        font-size: 50px;
     }
 }
 
@@ -137,12 +134,11 @@ footer {
 
     #top-bar {
         background-color: #A4DBF2;
-        height: 100px;
     }
 
     .biglogo {
         display: block;
-        width: 170px;
+        width: auto;
         height: 80px;
         position: absolute;
         margin-right: .5em;
@@ -150,45 +146,36 @@ footer {
         margin-top: .5em;
     }
 
-    .mainpagelogo, #hamburger-menu a{
+    .mainpagelogo, #hamburger-menu a {
         display: none;
     }
 
     .speechbubble {
-        display: block;
-        margin-left: 20rem;
-        margin-right: 10rem;
-        margin-top: 10rem;
-    }
-
-    .hellouser {
         margin-left: 15rem;
         margin-right: 10rem;
         margin-top: 5rem;
     }
 
-    .hellouser p{
-        font-size: 65px;
-        text-align: left;
+    .hellouser p {
         color: #A4DBF2;
     }
 
     aside {
-        display: block;
+        display: flex;
         background-color: white;
+        width: 20%;
     }
 
     .sidebar {
         padding-top: 2em;
         padding-left: 1em;
-        padding-right: 15em;
     }
 
-    .sidebar p{
-        font-size: 30px;
-        padding-bottom: 1em;
+    .sidebar p {
+        padding-bottom: 1.5em;
         color: #808080;
     }
+}
 
 
 /* 
