@@ -2,18 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Jisu Kim, Xi Yan">
     <meta name="description" content="The index page for the website SaveD - INFO 340 Spring">
     <title>SaveD</title>
 
-
+    <!-- normalize.css for cross-browser stuff -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="/img/iconfinder_General_Office_02_2530842.png">
 </head>
 <body>
-    <main class="mainpage">
+    <nav>
+        <div id = "top-bar">
+            <div id="logo-icon">
+                <a href="#"><img src="./img/main_logo_icon@2x.png" class="mainpagelogo" alt="saved with lightblue"></a>
+            </div>
+            <div id="hamburger-menu"><a href="#"><i class="fa fa-bars" aria-label="menu"></i></a></div>
+            <div id="bluelogo">
+                <a href="#"><img src="./img/landing_logo@2x.png" class="biglogo" alt="saved with darkerblue color"></a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <aside>
+            <div class="sidebar">
+                <p>Saved quotes</p>
+                <p>Recent saved</p>
+                <p>Settings</p>
+            </div>
+        </aside>
+        <div class="speechbubble">
+            <img src="./img/bubble@2x.png" class="bubble" alt="speech bubble with white color">
+            <div class="hellouser"><p>Hello, Annie</p></div>
+        </div>
+    </main>
+
+
+
+<!-- <main class="mainpage">
     <div class="sidebar">
         <div class="functions">
         <div class="dropdown">
@@ -41,7 +70,9 @@
             <p>This is empty for now!</p>
         </div>
         </div>
-    </main>
+    </main> -->
+
+
     <footer>Copyright &copy;2020 - &lt;Jisu Kim, Xi Yan&gt; // INFO 340B Spring 2020 // Information School</footer>
 </body>
 </html>
