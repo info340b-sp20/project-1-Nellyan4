@@ -16,22 +16,34 @@
 </head>
 <body>
     <nav>
-        <div id = "top-bar">
-            <div id="logo-icon">
-                <a href="#"><img src="./img/main_logo_icon@2x.png" class="mainpagelogo" alt="saved with lightblue"></a>
-            </div>
-            <div id="hamburger-menu"><a href="#"><i class="fa fa-bars" aria-label="menu"></i></a></div>
-            <div id="bluelogo">
-                <a href="#"><img src="./img/landing_logo@2x.png" class="biglogo" alt="saved with darkerblue color"></a>
+        <div class="container">
+            <div class="top-bar">
+                <div id="logo-icon">
+                    <a href="#"><img src="./img/main_logo_icon@2x.png" class="mainpagelogo" alt="saved with lightblue"></a>
+                </div>
+                <div id="hamburger-menu"><a href="#"><i class="fa fa-bars" aria-label="menu"></i></a></div>
+                <div id="bluelogo">
+                    <a href="#"><img src="./img/landing_logo@2x.png" class="biglogo" alt="saved with darkerblue color"></a>
+                </div>
             </div>
         </div>
     </nav>
     <main>
         <aside>
             <div class="sidebar">
-                <p style="font-size:1.3vw;">Saved quotes</p>
-                <p style="font-size:1.3vw;">Recent saved</p>
-                <p style="font-size:1.3vw;">Settings</p>
+                <!--this search box resource is from https://www.w3schools.com/howto/howto_css_searchbar.asp-->
+                <div class="containersearch">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                <!--sidebar contents-->
+                </div>
+                <ul>
+                    <li><a href="#savequote">Saved quotes</a></li>
+                    <li><a href="#recentsaved">Recent saved</a></li>
+                    <li><a href="#setting">Settings</a></li>
+                </ul>
             </div>
         </aside>
         <div class="speechbubble">

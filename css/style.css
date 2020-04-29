@@ -23,16 +23,25 @@ main {
     width: 100%;
 }
 
+/*side menu contents*/
 aside {
     display: none;
 }
+.containersearch {
+    display: none;
+}
 
+/*top bar contents*/
 .biglogo {
     display: none;
 }
 
-#top-bar {
-    display: block;
+.cotainer {
+    display: flex;
+    position: relative;
+}
+
+.top-bar {
     background-color: #D8EEFB;
     height: 10%;
 }
@@ -51,6 +60,7 @@ aside {
     right: 0;
 }
 
+/*main contents*/
 .bubble {
     display: block;
     margin-top: 10rem;
@@ -76,10 +86,12 @@ aside {
     font-weight: bold;
 }
 
+/*footer contents*/
 footer {
-    display: none;
+    display: block;
 }
 
+/*medium size of screen*/
 @media (min-width: 598px) {
     body {
         background-color: #B2F5D5;
@@ -90,14 +102,14 @@ footer {
     }
 }
 
+/*mid-large screen size*/
 @media (min-width: 768px) {
     body{
         background-color: #9AB9F4;
     }
 
-    #top-bar {
+    .top-bar {
         background-color: #A4DBF2;
-        height: 100px;
     }
     
     .mainpagelogo {
@@ -110,13 +122,9 @@ footer {
         position: absolute;
         right: 0;
         top: 0;
-        margin-top: 1rem;
         display: block;
     }
 
-    #hamburger-menu a{
-        font-size: 5rem;
-    }
 
     .hellouser p {
         color: #9AB9F4;
@@ -126,14 +134,15 @@ footer {
     }
 }
 
-
+/*large size screen*/
 @media (min-width: 992px) {
     body {
         background-color: #D8EEFB;
     }
 
-    #top-bar {
+    .top-bar {
         background-color: #A4DBF2;
+        height: 100px;
     }
 
     .biglogo {
@@ -171,9 +180,42 @@ footer {
         padding-left: 1em;
     }
 
-    .sidebar p {
-        padding-bottom: 1.5em;
+    /*this search box resource is from https://www.w3schools.com/howto/howto_css_searchbar.asp*/
+    .containersearch {
+        display: flex;
+        padding-bottom: 2rem;
+        padding-right: 1rem;
+    }
+
+    .containersearch button:hover {
+        background: #D8EEFB;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        padding-top: .5rem;
+        display: inline-block;
+    }
+
+    li {
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    li a{
+        font-size: 1.5vw;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        left: 0;
         color: #808080;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        color: #A4DBF2;
+        border-bottom: .6rem solid #A4DBF2;
+        padding-bottom: .8rem;
     }
 }
 
