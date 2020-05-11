@@ -42,17 +42,41 @@ aside {
     display: none;
 }
 
-.cotainer {
-    display: flex;
+.top-bar {
+    overflow: hidden;
+    background-color: #D8EEFB;
+    height: 10%;
     position: relative;
 }
 
-.top-bar {
-    background-color: #D8EEFB;
-    height: 10%;
+#hamburger-menu #myLinks{
+    display: none;
 }
 
-#hamburger-menu a{
+#hamburger-menu li, #hamburger-menu li .savequote, #hamburger-menu li .recentsaved {
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    display: block;
+    left: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#hamburger-menu li .themes {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+#hamburger-menu li .theme_color, #hamburger-menu li .theme_color > a{
+    padding-top: 20px;
+    padding-left: 5px;
+}
+
+
+#hamburger-menu .fa-bars{
     color: white;
     font-size: 4rem;
     margin-right: .5em;
