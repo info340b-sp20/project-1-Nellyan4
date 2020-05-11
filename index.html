@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="/img/iconfinder_General_Office_02_2530842.png">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <nav>
@@ -42,9 +44,17 @@
                 </div>
                 <!--sidebar contents-->
                 <ul>
-                    <li><a href="#savequote">Saved quotes</a></li>
-                    <li><a href="#recentsaved">Recent saved</a></li>
-                    <li><a href="#setting">Settings</a></li>
+                    <li><a class="savequote" href="#savequote">Saved quotes</a></li>
+                    <li><a class="recentsaved" href="#recentsaved">Recent saved</a></li>
+                    <li>
+                        <a href="#themes">Themes</a>
+                        <div class="theme_color">
+                            <a href="#light_blue"><img src="./img/Light%20blue%20theme.png"></a>
+                            <a href="#blue"><img src="./img/Blue%20theme.png"></a>
+                            <a href="#grey"><img class="grey" src="./img/Grey%20theme.png"></a>
+                            <a href="#light_green" id="light_green"><img src="./img/Light%20green%20theme.png"></a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </aside>
@@ -88,5 +98,10 @@
 
 
     <footer>Copyright &copy;2020 - &lt;Jisu Kim, Xi Yan&gt; // INFO 340B Spring 2020 // Information School</footer>
+
+    <!-- include JavaScript file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="js/index.js"></script>
+
 </body>
 </html>

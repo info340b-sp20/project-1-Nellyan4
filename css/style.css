@@ -15,11 +15,13 @@ html, body{
 
 body {
     background-color: #A4DBF2;
+    height: 100%;
+    width: 100%;
 }
 
 main {
     display: flex;
-    height: 100%;
+    height: 90%;
     width: 100%;
 }
 
@@ -93,7 +95,7 @@ aside {
 
 /*footer contents*/
 footer {
-    display: block;
+    display: none;
 }
 
 /*medium size of screen*/
@@ -238,13 +240,19 @@ footer {
         text-decoration: none;
     }
 
-    li a:hover {
+    .savequote:hover, .recentsaved:hover {
         color: #A4DBF2;
         border-bottom: .6rem solid #A4DBF2;
         padding-bottom: .8rem;
     }
+
     .mainpagelogo, #hamburger-menu a {
         display: none;
+    }
+
+    .theme_color, .theme_color > a{
+        padding-top: 1vw;
+        padding-right: 0.5vw;
     }
 }
 
