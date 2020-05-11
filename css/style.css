@@ -23,6 +23,10 @@ main {
     width: 100%;
 }
 
+h1 {
+    display: none;
+}
+
 /*side menu contents*/
 aside {
     display: none;
@@ -73,18 +77,18 @@ aside {
 .hellouser {
     display: block;
     position: relative;
-    margin-top: -33%;
+    margin-top: -40%;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
     
 }
 
-.hellouser p{
+.hellouser h2{
     text-align: center;
     color: #A4DBF2;
     font-weight: bold;
-    font-size: 5vw;
+    font-size: 7vw;
 }
 
 /*footer contents*/
@@ -98,8 +102,9 @@ footer {
         background-color: #B2F5D5;
     }
 
-    .hellouser p {
+    .hellouser h2 {
         color: #5FDB9F;
+        font-size: 8vw;
     }
 }
 
@@ -126,10 +131,9 @@ footer {
         display: block;
     }
 
-
-    .hellouser p {
-        color: #9AB9F4;
-        font-size: 60px;
+    .hellouser h2 {
+        color: #8000ff;
+        font-size: 7vw;
         top: 30px;
         left: 30px;
     }
@@ -164,8 +168,9 @@ footer {
         margin-top: 5rem;
     }
 
-    .hellouser p {
-        color: #A4DBF2;
+    .hellouser h2 {
+        font-weight: bold;
+        color: #1f85db;
         font-size: 5vw;
     }
 
@@ -187,6 +192,26 @@ footer {
         padding-right: 1rem;
     }
 
+    .containersearch label {
+        display: none;
+    }
+
+    #search {
+        width: 10vw;
+    }
+
+    .containersearch button {
+        background: #A4DBF2;
+        color: white;
+        font-size: 17px;
+        border: 1px solid #808080;
+        cursor: pointer;
+      }
+    
+    .containersearch button p {
+        display: none;
+    }
+
     .containersearch button:hover {
         background: #D8EEFB;
     }
@@ -196,6 +221,7 @@ footer {
         padding: 0;
         padding-top: .5rem;
         display: inline-block;
+        list-style-type: none;
     }
 
     li {
@@ -208,7 +234,7 @@ footer {
         padding-top: 1rem;
         padding-bottom: 1rem;
         left: 0;
-        color: #808080;
+        color: #565656;
         text-decoration: none;
     }
 
