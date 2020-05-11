@@ -1,7 +1,7 @@
 'use strict';
 
 function hamburger() {
-    var x = document.getElementById("myLinks");
+    var x = $("#myLinks")[0];
     if (x.style.display === "block") {
         x.style.display = "none";
     } else {
