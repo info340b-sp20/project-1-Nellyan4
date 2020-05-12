@@ -92,7 +92,7 @@ for (var row = 0; row < allRows.length; row++) {
         table += '</td>';
         } else {
             table += '<td>';
-            table += '<a href="#delete_quote" id="removeRow" aria-lable="remove text"><img src="./img/delete.png" alt="trash can">';
+            table += '<a href="#delete_quote" class="removeRow" aria-lable="remove text"><img src="./img/delete.png" alt="trash can">';
             table += '</td>';
         }
     }
@@ -109,30 +109,17 @@ for (var row = 0; row < allRows.length; row++) {
 table += '</tbody>';
 table += '</table>';
 $('.table-container').append(table);
+    $(".removeRow").on("click", function () {
+        $(this).closest('tr').remove();
+    })
 }
 
+$(".savequote").click(function () {
+    $(".speechbubble").css("display", "initial");
+    $(".table-container").css("display", "none");
+})
 
-
-/* I tried this code!!!!!! */
-
-
-/* function SomeDeleteRowFunction(btndel) {
-    if (typeof(btndel) == "object") {
-        $(btndel).closest("tr").remove();
-    } else {
-        return false;
-    }
-}
-
-$("#removeRow").on('click', '.removeRow', function() {
-    $(this).closest('tr').remove();
-    return false;
-}); */
-
-// function rowDelete(bt) {
-//     if (typeof(bt) == "object") {
-//         $(bt).closest("tr").remove();
-//     } else {
-//         return false;
-//     }
-// }
+$(".recentsaved").click(function () {
+    $(".speechbubble").css("display", "none");
+    $(".table-container").css("display", "initial");
+})
