@@ -8,6 +8,7 @@ function hamburger() {
         x.style.display = "block";
     }
 }
+console.log(hamburger);
 
 $("#light_green").click(function () {
     $("body").css("background-color", "#B2F5D5");
