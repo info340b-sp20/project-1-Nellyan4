@@ -57,7 +57,10 @@ $("#sidebar_light_blue").click(function () {
     $(".speechbubble h2").css("color", "#D8EEFB");
 });
 
-/* read csv file */
+
+/* read csv file and create table 
+    source : https://code.tutsplus.com/tutorials/parsing-a-csv-file-with-javascript--cms-25626 */
+
 $.ajax({
     url: './data/mock_data.csv',
     dataType: 'text',
@@ -67,28 +70,34 @@ function createTable(data) {
 var allRows = data.split(/\r?\n|\r/);
 var table = '<table>';
 
-for (var singleRow = 0; singleRow < allRows.length; singleRow++) {
-    if (singleRow === 0) {
+for (var row = 0; row < allRows.length; row++) {
+    if (row === 0) {
     table += '<thead>';
     table += '<tr>';
     } else {
     table += '<tr>';
     }
-    var rowCells = allRows[singleRow].split(',');
+    var cells = allRows[row].split(',');
 
-    for (var rowCell = 0; rowCell < rowCells.length; rowCell++) {
-    if (singleRow === 0) {
+    for (var cell = 0; cell < cells.length; cell++) {
+    if (row === 0) {
         table += '<th>';
-        table += rowCells[rowCell];
+        table += cells[cell];
         table += '</th>';
     } else {
+        if(cell < cells.length -1) {
         table += '<td>';
-        table += rowCells[rowCell];
+        table += cells[cell];
         table += '</td>';
+        } else {
+            table += '<td>';
+            table += '<a href="#delete" id="deleteButton"><img src="./img/delete.png">';
+            table += '</td>';
+        }
     }
-    
+
     }
-    if (singleRow === 0) {
+    if (row === 0) {
     table += '</tr>';
     table += '</thead>';
     table += '<tbody>';
@@ -100,3 +109,5 @@ table += '</tbody>';
 table += '</table>';
 $('.table-container').append(table);
 }
+
+
