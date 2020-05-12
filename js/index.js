@@ -110,7 +110,12 @@ table += '</table>';
 $('.table-container').append(table);
 }
 
-function SomeDeleteRowFunction(btndel) {
+
+
+/* I tried this code!!!!!! */
+
+
+/* function SomeDeleteRowFunction(btndel) {
     if (typeof(btndel) == "object") {
         $(btndel).closest("tr").remove();
     } else {
@@ -121,7 +126,7 @@ function SomeDeleteRowFunction(btndel) {
 $("#removeRow").on('click', '.removeRow', function() {
     $(this).closest('tr').remove();
     return false;
-});
+}); */
 
 // function rowDelete(bt) {
 //     if (typeof(bt) == "object") {
