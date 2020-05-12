@@ -91,7 +91,7 @@ for (var row = 0; row < allRows.length; row++) {
         table += '</td>';
         } else {
             table += '<td>';
-            table += '<a href="#delete" id="deleteButton"><img src="./img/delete.png">';
+            table += '<a href="#delete_quote" id="removeRow" aria-lable="remove text"><img src="./img/delete.png" alt="trash can">';
             table += '</td>';
         }
     }
@@ -110,4 +110,23 @@ table += '</table>';
 $('.table-container').append(table);
 }
 
+function SomeDeleteRowFunction(btndel) {
+    if (typeof(btndel) == "object") {
+        $(btndel).closest("tr").remove();
+    } else {
+        return false;
+    }
+}
 
+$("#removeRow").on('click', '.removeRow', function() {
+    $(this).closest('tr').remove();
+    return false;
+});
+
+// function rowDelete(bt) {
+//     if (typeof(bt) == "object") {
+//         $(bt).closest("tr").remove();
+//     } else {
+//         return false;
+//     }
+// }
